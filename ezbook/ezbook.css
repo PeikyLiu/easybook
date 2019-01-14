@@ -1,6 +1,6 @@
 *{
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
 }
 html,body{
   height: 100%;
@@ -15,15 +15,17 @@ header{
 .head{
   height: 58px;
   font-size: 17px;
-  width: 100%;
+  min-width: 768px;
+  max-width: 1440px;
   display: flex;
   align-items: center;
   margin: 0 auto;
   position: fixed;
   background-color: #fdfdfd;
+  right: 0;
+  left: 0;
 }
 .head-left{
-  margin-left: 230px;
 }
 .head-left img{
   float: left;
@@ -32,7 +34,7 @@ header{
 .head-middle{
   display: flex;
   justify-content: space-between;
-  width: 1150px;
+  flex-grow: 1;
 }
 .left-a{
   margin-left: 150px;
@@ -77,24 +79,24 @@ header{
 }
 .head-right .register{
   text-decoration: none;
-  width: 80px;
-  height: 38px;
+  width: 50px;
+  height: 25px;
   color: #ea6f5a;
   background-color: transparent;
   border-radius: 20px;
   border: 1px solid rgba(236,97,73,.7);
   padding:  10px 25px;
-  margin-left: 15px;
+  margin: auto;
 }
 .head-right .page{
   text-decoration: none;
-  width: 100px;
+  width: 70px;
   padding: 10px 25px;
   color: #fff;
   background-color: #ea6f5a;
   border-radius: 20px;
-  height: 40px;
-  margin-left: 15px;
+  height: 25px;
+  margin: auto;
 
 }
 .container{
@@ -108,7 +110,7 @@ header{
   width: 66.6%;
   margin-right: 20px;
 }
-.page-left .img img{
+.page-img img{
   width: 100%;
   height: 270px;
 }
@@ -132,7 +134,7 @@ header{
 .page-right img{
   width: 100%;
 }
-.text div{
+.article .text{
   width: 100%;
   margin: 0 0 15px;
   padding: 15px 2px 20px 0;
@@ -145,12 +147,16 @@ header{
   font-size: 20px;
   font-weight: 500;
   color: #333;
+  display: block;
+  width: 75%;
+  margin: 0;
 }
 
 .text p{
   width: 73%;
   display: inline-block;
   color: #999;
+  margin-top: 5px;
 }
 .text img{
   width: 25%;
@@ -220,7 +226,7 @@ header{
   padding-top: 5px;
   margin-right: 60px;
   font-size: 14px;
-  display: block;
+  display: inline-block;
   text-decoration: none;
   color: #333;
 }
